@@ -6,8 +6,7 @@ go:
 services:
   - docker
 env:
-  - DEP_VERSION="0.4.1"
-  - PATH="$PATH:$GOPATH/bin"
+  - DEP_VERSION="0.4.1" PATH="$PATH:$GOPATH/bin"
 before_install:
   # Install dep
   - curl -L -s https://github.com/golang/dep/releases/download/v${DEP_VERSION}/dep-linux-amd64 -o $GOPATH/bin/dep
