@@ -16,6 +16,8 @@ install:
   - dep ensure --vendor-only
   - go install -v ./vendor/gopkg.in/bblfsh/sdk.v1/cli/...
   - ls $GOPATH/bin
+  - ls ./vendor/gopkg.in/bblfsh/sdk.v1
+  - ls ./vendor/gopkg.in/bblfsh/sdk.v1/cli
 before_script:
   - bblfsh-sdk prepare-build .
 
