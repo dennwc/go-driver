@@ -14,8 +14,8 @@ before_install:
   - chmod +x $GOPATH/bin/dep
 install:
   - dep ensure --vendor-only
-  - go install -v ./vendor/gopkg.in/bblfsh/sdk.v1/...
-  - ls $GOPATH/bin && echo $GOPATH/bin && echo $PATH/bin
+  - go install -v ./vendor/gopkg.in/bblfsh/sdk.v1/cli/...
+  - ls $GOPATH/bin
 before_script:
   - bblfsh-sdk prepare-build .
 
